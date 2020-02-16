@@ -42,7 +42,7 @@ AddEventHandler('esx_blowtorch:clearweld', function(x,y,z)
 		Citizen.CreateThread(function()
 			while clearweld do
 				Wait(1000)
-				local weld = ESX.Game.GetClosestObject('prop_weld_torch', vector3(x,y,z)
+				local weld = ESX.Game.GetClosestObject('prop_weld_torch', vector3(x,y,z))
 				ESX.Game.DeleteObject(weld)
 			end
 		end)
